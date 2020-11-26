@@ -1,6 +1,6 @@
 # preCICE Adapter for LS-DYNA
 Author: Stefan Scheiblhofer, Stephan Jäger ([LKR Leichtmetallkompetenzzentrum Ranshofen GmbH](https://www.ait.ac.at/lkr))   
-Contact: <stephan.jaeger@ait.ac.at>
+Contact: <matthias.hartmann@ait.ac.at>
 
 This is the readme to develop a preCICE adapter for LS-DYNA.
 The readme is based on preCICE V1.3.0 and LS-DYNA R9.3.0 in the
