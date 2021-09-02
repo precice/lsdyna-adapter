@@ -253,7 +253,7 @@ c|                                                                     |
 c|      Write initial data                                             |
 c|_____________________________________________________________________|
 
-        call precicef_action_required(writeInitialData, bool)
+        call precicef_is_action_required(writeInitialData, bool)
         if (bool.eq.1) then
           call precicef_write_bsdata(dummyID, numNodesInSet,vertexIDs, dummy)
           call precicef_fulfilled_action(writeInitialData)
@@ -274,7 +274,7 @@ c|_____________________________________________________________________|
         call precicef_read_bsdata(tempID, numNodesInSet, vertexIDs,temps)
 
 c       save data for current timestep
-        call precicef_action_required(writeItCheckp, bool)
+        call precicef_is_action_required(writeItCheckp, bool)
         if (bool.eq.1) then
           dummyItCheckp=dummy
           call precicef_fulfilled_action(writeItCheckp)
@@ -328,7 +328,7 @@ c|                                                                     |
 c|    Check if ongoing                                                 |
 c|_____________________________________________________________________|
 
-      call precicef_ongoing(ongoing)
+      call precicef_is_coupling_ongoing(ongoing)
 
       if (ongoing.eq.0) then
 
