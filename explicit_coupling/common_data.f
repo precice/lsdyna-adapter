@@ -9,6 +9,7 @@
       character*50 writeDataName
 
       integer rank
+      integer numberOfVertices
       integer commSize
       integer ongoing
       integer dimensions
